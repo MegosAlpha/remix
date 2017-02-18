@@ -1,0 +1,1 @@
+imainstr l = "hello world";cout<<l<<endl;}
