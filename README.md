@@ -1,4 +1,4 @@
-# Remix++ Programming Language
+# Remix Programming Language
 Tiny language that expediates C++ development, designed for golfing.
 
 ## Requirements
