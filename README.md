@@ -13,15 +13,16 @@ Compile the transpiler with:
 ```bash
 g++ remix.cpp -std=c++0x -o remix
 ```
-Then try the hello world example:
+Then try the hello world example (also prints hello world sorted):
 ```bash
 ./remix remix.in
 ./remix.out
 ```
 ## Current replacements and improvements
- - Replaces "str" with "string ", so use str for your data types.
+ - Replaces "str " with "string ", so use str for your data types.
  - Replaces "imain" with a basic main, involving argc and argv parameters.
  - Appends a whole bunch of includes and using namespace std to the beginning.
+ - New: Standard Library makes some programming and printing smaller and easier. Open to suggestions.
 
 ## Contributing
 Easy - make a pull request. If you don't have time, you may open a feature

@@ -1,1 +1,1 @@
-imainstrl = "hello world";cout<<l<<endl;}
+imainstr l = "hello world";prnt(l);strsort(l);prnt(l);}

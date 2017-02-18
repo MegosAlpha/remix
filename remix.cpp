@@ -14,11 +14,14 @@ int main(int argc, char const *argv[]) {
     ifstream infile (argv[1]);
     stringstream filebuf;
     filebuf << infile.rdbuf();
+    ifstream stdlibfile ("remix-stdlib.cpp");
+    stringstream rstdlib;
+    rstdlib << stdlibfile.rdbuf();
     string outstr = "";
     outstr += filebuf.str();
-    replace_all(outstr, "str", "string ");
+    replace_all(outstr, "str ", "string ");
     replace_all(outstr, "imain", "int main (int argc, char const *argv[]){\n");
-    outstr = "#include <iostream>\n#include <string>\n#include <vector>\n#include <algorithm>\n#include <iostream>\n#include <fstream>\nusing namespace std;\n" + outstr;
+    outstr = rstdlib.str() + outstr;
     ofstream outfile ("remix.out.cpp");
     outfile << outstr;
     outfile.close();
