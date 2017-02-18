@@ -16,7 +16,7 @@ int main(int argc, char const *argv[]) {
     filebuf << infile.rdbuf();
     string outstr = "";
     outstr += filebuf.str();
-    replace_all(outstr, "str", "string");
+    replace_all(outstr, "str", "string ");
     replace_all(outstr, "imain", "int main (int argc, char const *argv[]){\n");
     outstr = "#include <iostream>\n#include <string>\n#include <vector>\n#include <algorithm>\n#include <iostream>\n#include <fstream>\nusing namespace std;\n" + outstr;
     ofstream outfile ("remix.out.cpp");

@@ -1,1 +1,1 @@
-imainstr l = "hello world";cout<<l<<endl;}
+imainstrl = "hello world";cout<<l<<endl;}
